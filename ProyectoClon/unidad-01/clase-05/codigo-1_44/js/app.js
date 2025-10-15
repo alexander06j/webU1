@@ -5,14 +5,34 @@ $(document).ready(function () {
       dataType: "json",
       success: function (peliculas) {
         let html = "";
+
+        let hoy = new Date(); //Establece la fecha actual del sistema.
+
         peliculas.forEach(function (peli) {
+
+          let fechaEstreno = new Date(peli.estreno);//convierte la fecha de estreno
+          // Verificamos si hoy es antes del estreno
+          let esEstreno = hoy < fechaEstreno;
+
+          // Elegimos el precio según corresponda
+          let precio = esEstreno ? peli.precios.estreno : peli.precios.normal;
+
+          // Badge visual
+          let badge = esEstreno
+          ? `<span class="badge bg-warning text-dark">Próximo Estreno</span>`
+          : `<span class="badge bg-success">En Cartelera</span>`;
+
           html += `
             <div class="col-md-4">
               <div class="card h-100 shadow">
                 <img src="img/${peli.imagen}" class="card-img-top" alt="${peli.titulo}">
                 <div class="card-body">
                   <h5 class="card-title">${peli.titulo}</h5>
-                  <p class="card-text">${peli.genero}</p>
+                  <p class="card-text">${peli.generos}</p>
+                  <p class="card-text">
+                  <strong>Precio: $${precio.toFixed(2)}</strong><br>
+                  ${badge}
+                  </p>
                   <a href="pages/detalle.html?id=${peli.id}" class="btn btn-primary">Ver más</a>
                 </div>
               </div>
