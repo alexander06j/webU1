@@ -1,0 +1,42 @@
+[
+  { "peliculaId": 1, "usuario": "Ana", "comentario": "Una historia emocionante y bien dirigida.", "calificacion": 5 },
+  { "peliculaId": 1, "usuario": "Luis", "comentario": "Buena actuación, pero el final fue predecible.", "calificacion": 3 },
+  { "peliculaId": 1, "usuario": "María", "comentario": "Visualmente impresionante, aunque algo lenta.", "calificacion": 4 },
+
+  { "peliculaId": 2, "usuario": "Carlos", "comentario": "Gran banda sonora y efectos especiales.", "calificacion": 4 },
+  { "peliculaId": 2, "usuario": "Sofía", "comentario": "La trama fue confusa en algunos momentos.", "calificacion": 2 },
+  { "peliculaId": 2, "usuario": "Jorge", "comentario": "Me mantuvo interesado de principio a fin.", "calificacion": 5 },
+
+  { "peliculaId": 3, "usuario": "Valeria", "comentario": "Una película ligera y entretenida.", "calificacion": 4 },
+  { "peliculaId": 3, "usuario": "Esteban", "comentario": "No me hizo sentir tanto como esperaba.", "calificacion": 2 },
+  { "peliculaId": 3, "usuario": "Lucía", "comentario": "Perfecta para ver en familia o con amigos.", "calificacion": 5 },
+
+  { "peliculaId": 4, "usuario": "Mateo", "comentario": "El desarrollo de personajes fue excelente.", "calificacion": 5 },
+  { "peliculaId": 4, "usuario": "Camila", "comentario": "Demasiado larga para mi gusto.", "calificacion": 3 },
+  { "peliculaId": 4, "usuario": "Daniel", "comentario": "Una obra maestra visual.", "calificacion": 5 },
+
+  { "peliculaId": 5, "usuario": "Isabela", "comentario": "La cinematografía fue increíble.", "calificacion": 5 },
+  { "peliculaId": 5, "usuario": "Tomás", "comentario": "La historia fue algo básica.", "calificacion": 3 },
+  { "peliculaId": 5, "usuario": "Renata", "comentario": "Ideal para los que solo quieren pasar el rato.", "calificacion": 4 },
+
+  { "peliculaId": 6, "usuario": "Sebastián", "comentario": "Una película  que te mantiene alerta.", "calificacion": 4 },
+  { "peliculaId": 6, "usuario": "Paula", "comentario": "Demasiados giros sin sentido.", "calificacion": 2 },
+  { "peliculaId": 6, "usuario": "Andrés", "comentario": "Final inesperado y brillante.", "calificacion": 5 },
+
+  { "peliculaId": 7, "usuario": "Fernanda", "comentario": "Buena y conmovedora, la volvería a ver sin duda.", "calificacion": 5 },
+  { "peliculaId": 7, "usuario": "Diego", "comentario": "Demasiado cliché para mi gusto.", "calificacion": 2 },
+  { "peliculaId": 7, "usuario": "Natalia", "comentario": "Los protagonistas tienen buena química.", "calificacion": 4 },
+
+  { "peliculaId": 8, "usuario": "Gabriel", "comentario": "Una aventura épica.", "calificacion": 5 },
+  { "peliculaId": 8, "usuario": "Mónica", "comentario": "Me aburrió en la segunda mitad.", "calificacion": 2 },
+  { "peliculaId": 8, "usuario": "Ricardo", "comentario": "Gran dirección y fotografía.", "calificacion": 4 },
+
+  { "peliculaId": 9, "usuario": "Patricia", "comentario": "Muy interesante, recomendada para pasar el rato.", "calificacion": 4 },
+  { "peliculaId": 9, "usuario": "Hugo", "comentario": "Le faltó profundidad en algunos temas.", "calificacion": 3 },
+  { "peliculaId": 9, "usuario": "Elena", "comentario": "Me hizo reflexionar bastante.", "calificacion": 5 },
+
+  { "peliculaId": 10, "usuario": "Martín", "comentario": "Acción sin descanso, muy entretenida.", "calificacion": 5 },
+  { "peliculaId": 10, "usuario": "Carla", "comentario": "Demasiado ruido y poca historia.", "calificacion": 2 },
+  { "peliculaId": 10, "usuario": "Fabián", "comentario": "Perfecta para los fans del género.", "calificacion": 4 }
+]
+

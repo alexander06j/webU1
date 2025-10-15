@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "titulo": "Dune",
+    "imagen": "dune.jpg",
+    "generos": "Aventura",
+    "sinopsis": "Paul Atreides, heredero de una casa noble, viaja al árido planeta Arrakis, donde se libra una guerra por el control de la especia, el recurso más valioso del universo. En medio de traiciones, visiones proféticas y batallas épicas, Paul debe enfrentar su destino como líder espiritual y guerrero. Una odisea de poder, fe y supervivencia en un mundo hostil.",
+    "trailer": "https://www.youtube.com/embed/mSY_NbSmaUI",
+    "estreno": "2025-10-10T00:00:00Z",
+    "precios": {
+      "estreno": 7.50,
+      "normal": 5.50
+    }
+  },
+
+  {
+    "id": 2,
+    "titulo": "50 primeras citas",
+    "imagen": "50-primeras-citas.jpg",
+    "generos": "Comedia",
+    "sinopsis": "Henry Roth, veterinario en Hawái, se enamora de Lucy, una mujer que sufre amnesia anterógrada y olvida todo cada día. Para conquistarla, Henry debe reinventar su amor diariamente. Con humor, ternura y perseverancia, esta comedia romántica explora el poder del amor verdadero frente a los desafíos de la memoria y la rutina.",
+    "trailer": "https://www.youtube.com/embed/17KJk3ErIx0",
+    "estreno": "2025-07-10T00:00:00Z",
+    "precios": {
+      "estreno": 6.50,
+      "normal": 4.50
+    }
+  },
+  {
+    "id": 3,
+    "titulo": "Batman Caballero de la Noche",
+    "imagen": "batman-caballero-de-la-noche.webp",
+    "generos": "Acción",
+    "sinopsis": "Batman, el fiscal Harvey Dent y el comisionado Gordon unen fuerzas para erradicar el crimen en Gotham. Pero el Joker, un anarquista impredecible, desata el caos y pone a prueba los límites morales del héroe. Con dilemas éticos, acción intensa y una actuación icónica de Heath Ledger, esta cinta redefine el género de superhéroes.",
+    "trailer": "https://www.youtube.com/embed/dzQtWkpc2-c",
+    "estreno": "2025-12-01T00:00:00Z",
+    "precios": {
+      "estreno": 9.50,
+      "normal": 6.50
+    }
+  },
+
+  {
+    "id": 4,
+    "titulo": "Inside Out 2",
+    "generos": ["Animación", "Comedia", "Drama"],
+    "imagen": "insideout2.jpg",
+    "sinopsis": "Riley entra en la adolescencia y sus emociones enfrentan una remodelación interna. Alegría, Tristeza y compañía deben adaptarse a la llegada de Ansiedad, Vergüenza, Envidia y Aburrimiento. En medio de cambios hormonales y sociales, la mente de Riley se convierte en un campo de batalla emocional. Pixar regresa con una historia profunda, divertida y conmovedora.",
+    "trailer": "https://www.youtube.com/embed/LEjhY15eCx0",
+    "estreno": "2025-05-20T00:00:00Z",
+    "precios": {
+      "estreno": 6.5,
+      "normal": 4.5
+  }
+},
+{
+    "id": 5,
+    "titulo": "Avatar 2",
+    "generos": ["Acción", "Aventura", "Ciencia Ficción"],
+    "imagen": "avatar2.jpg",
+    "sinopsis": "Jake Sully y Neytiri viven con su familia en Pandora, pero una nueva amenaza humana los obliga a buscar refugio entre los clanes acuáticos. Mientras exploran los secretos del océano, deben proteger su hogar y legado. Visualmente deslumbrante, esta secuela expande el universo de Avatar con temas de familia, ecología y resistencia.",
+    "trailer": "https://www.youtube.com/embed/d9MyW72ELq0",
+    "estreno": "2025-11-10T00:00:00Z",
+    "precios": {
+      "estreno": 7.5,
+      "normal": 5.0
+    }
+  },
+  {
+    "id": 6,
+    "titulo": "Oppenheimer (2023)",
+    "generos": ["Acción", "Drama", "Historia"],
+    "imagen": "oppenheimer2023.jpg",
+    "sinopsis": "J. Robert Oppenheimer, físico brillante y atormentado, lidera el Proyecto Manhattan para crear la bomba atómica. Mientras lucha con dilemas éticos y políticos, su legado se convierte en símbolo de poder y destrucción. Dirigida por Christopher Nolan, esta biografía intensa mezcla ciencia, filosofía y tragedia en una narrativa visualmente poderosa y emocionalmente devastadora.",
+    "trailer": "https://www.youtube.com/embed/gMPEbJQun68",
+    "estreno": "2025-06-10T00:00:00Z",
+    "precios": {
+      "estreno": 8.50,
+      "normal": 6.70
+    }
+  },
+  {
+    "id": 7,
+    "titulo": "El Señor de los Anillos: La Comunidad del Anillo (2001)",
+    "generos": ["Aventura", "Ciencia Ficción"],
+    "imagen": "seniorDeLosAnillos.jpg",
+    "sinopsis": "Frodo Bolsón hereda un anillo con poder maligno y debe destruirlo en Mordor. Acompañado por humanos, elfos, enanos y hobbits, enfrenta criaturas oscuras y tentaciones. La comunidad se forma y se fractura, pero la misión continúa. Una épica fantasía sobre amistad, sacrificio y esperanza que marcó un hito en el cine moderno.",
+    "trailer": "https://www.youtube.com/embed/1YjXoRqUgVk",
+    "estreno": "2025-12-10T00:00:00Z",
+    "precios": {
+      "estreno": 4.00,
+      "normal": 5.75
+    }
+  },
+  {
+    "id": 8,
+    "titulo": "Interestelar (2014)",
+    "generos": ["Acción", "Aventura", "Ciencia Ficción"],
+    "imagen": "interestelar.jpg",
+    "sinopsis": "La Tierra agoniza y un grupo de astronautas viaja por agujeros de gusano en busca de un nuevo hogar. Cooper, piloto y padre, enfrenta paradojas temporales y decisiones desgarradoras. Ciencia, amor y relatividad se entrelazan en esta odisea espacial que desafía la percepción del tiempo y la conexión humana. Dirigida por Christopher Nolan.",
+    "trailer": "https://www.youtube.com/embed/LYS2O1nl9iM",
+    "estreno": "2025-03-10T00:00:00Z",
+    "precios": {
+      "estreno": 6.50,
+      "normal": 7.25
+    }
+  },
+  {
+    "id": 9,
+    "titulo": "El Laberinto del Fauno (2006)",
+    "generos": ["Drama", "Fantasía"],
+    "imagen": "laberintoDelFauno.jpg",
+    "sinopsis": "En la España franquista, Ofelia escapa a un mundo mágico donde un fauno le revela que es una princesa perdida. Para regresar a su reino, debe superar tres pruebas. Entre la brutalidad del mundo real y la fantasía oscura, esta obra de Guillermo del Toro mezcla horror, inocencia y resistencia con belleza inquietante.",
+    "trailer": "https://www.youtube.com/embed/FGzvvUBXj5M",
+    "estreno": "2025-09-10T00:00:00Z",
+    "precios": {
+      "estreno": 9.50,
+      "normal": 7.00
+    }
+  },
+  {
+    "id": 10,
+    "titulo": "Kill Bill: Volumen 2",
+    "generos": ["Acción", "Suspenso"],
+    "imagen": "killBill2.jpg",
+    "sinopsis": "Kill Bill: Volumen 2 es una película de acción y suspense estadounidense escrita y dirigida por Quentin Tarantino. La Novia, interpretada por Uma Thurman, busca venganza contra los asesinos que intentaron matarla durante su boda. Después de eliminar a sus enemigos, se centra en matar a Bill, su antiguo jefe. La película destaca por su estilo de dirección.",
+    "trailer": "https://www.youtube.com/embed/q2h6EFk36kI",
+    "estreno": "2025-11-10T00:00:00Z",
+    "precios": {
+      "estreno": 9.50,
+      "normal": 10.00
+    }
+  }
+]
