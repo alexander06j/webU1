@@ -6,4 +6,8 @@ body {
     height: 250px;
     object-fit: cover;
   }
+
+  #spinner{
+    display : none;
+  }
   

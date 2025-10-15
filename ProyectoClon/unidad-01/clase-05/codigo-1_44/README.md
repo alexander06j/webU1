@@ -64,11 +64,11 @@ Esto clonará correctamente la carpeta del proyecto, sin necesidad de copiar tod
  2. Asignar el precio segun corresponda y crear una etiqueta visual en donde indique si la pelicula es un “Próximo Estreno” o está “En Cartelera”.
 
 
-## Paso 3-4
+## Agregar nuevas Películas
 1. Agregar al menos 5 películas nuevas.
 - Se agregaron un total de 6 películas nuevas, junto a su respectivos datos (portada, vídeo y sinopsis de al menos 60 palabras).
 
-- Para las portadas se utilizó el formato jpg, mientras que en los vídeos utilicé  https://www.youtube.com/embed/VIDEO_ID y no  la URL estándar de YouTube. A continuación les dejo un ejemplo:
+- Para las portadas se utilizó el formato jpg, mientras que en los vídeos utilicé  https://www.youtube.com/embed/VIDEO_ID y no  la URL estándar de YouTube. A continuación dejo un ejemplo:
 
 >*  {
     "imagen": "killBill2.jpg",
@@ -76,9 +76,49 @@ Esto clonará correctamente la carpeta del proyecto, sin necesidad de copiar tod
     "trailer": "https://www.youtube.com/embed/q2h6EFk36kI",
     }
 
+## Simulación de carga AJAX 
+- Como siguiente paso, se simuló un retraso de 5 segundos en la web al momento de cargar la pagina por primera vez. Para lograr esto seguimos una serie de procedimientos detallados a continuación:
+1. En el HTML colocamos un spinner, dentro del spinner definimos el texto que se va a mostrar en pantalla.
 
+2. Siguiente, ocultamos la el spinner en el CSS:
+  #spinner {
+    display : none;
+  }
 
+3. En el main de nuestro proyecto (app.js) agregamos este retraso aritificial de 5 segundos antes de hacer la llamada AJAX. Muestro algunoas de las nuevas lineas de codigo implementadas:
+- $('#spinner').show();
+- $('#spinner').hide();
+- }, 5000); 
 
+### Resultado 
+- El spinner se muestra inmediatamente al cargar la página.
+- Durante 5 segundos no pasa nada (simulación de carga).
+- Luego se hace la petición AJAX.
+- Cuando llegan los datos, se oculta el spinner y se muestran las películas.
+
+## Nueva Página HTML formulario
+Como primer paso, se creó un nuevo archivo html llamado renta.html, el cual permite al usuario:
+
+- Seleccionar una o más películas disponibles (cargadas dinámicamente desde peliculas.json).
+
+- Elegir la forma de pago y el número de días de renta.
+
+- Al enviar el formulario, se muestra un resumen de la compra en un modal de Bootstrap, incluyendo nombre del cliente, películas seleccionadas, duración de la renta y total a pagar.
+
+La lógica se integró en app.js, con rutas adaptativas para que el JSON se cargue correctamente desde distintas ubicaciones del proyecto.
+
+## Sección de Reseñas
+Se creó un archivo resenias.json en la carpeta data/. El cual contiene
+dentro entre 3 y 5 reseñas por cada película, identificadas por su id.
+
+- Se agregó una sección dinámica de reseñas en la página detalle.html, cargadas mediante AJAX desde el archivo resenias.json. 
+
+- Cada reseña incluye usuario, comentario y calificación entre 1 y 5, mostrada visualmente con estrellas.
+
+- Se implementó filtrado por peliculaId y se modularizó el código en detalle.js.
+
+### detalle.js 
+Este archivo contiene el código JavaScript que gestiona dinámicamente la sección de reseñas en detalle.html. Utiliza AJAX para cargar el contenido desde resenias.json, filtra las reseñas según el id de la película obtenido desde la URL, y las muestra en tarjetas con calificación visual en forma de estrellas. También incluye una función modular para generar las estrellas según la puntuación (1 a 5)
 
 ## URL 
 https://github.com/alexander06j/webU1.git
