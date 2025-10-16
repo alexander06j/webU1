@@ -1,4 +1,11 @@
 $(document).ready(function () {
+  
+  // Mostrar alerta de bienvenida solo una vez
+  if (!localStorage.getItem("bienvenidaMostrada")) {
+  $("#alerta-bienvenida").removeClass("d-none");
+  localStorage.setItem("bienvenidaMostrada", "true");
+  }
+
   // Detecta la ruta correcta del JSON según la ubicación del HTML
   const rutaJSON = window.location.pathname.includes("/pages/")
     ? "../data/peliculas.json"
@@ -40,13 +47,19 @@ $(document).ready(function () {
                       ${badge}
                     </p>
                     <a href="pages/detalle.html?id=${peli.id}" class="btn btn-primary">Ver más</a>
+                     <button class="btn btn-outline-danger ver-trailer" data-trailer="${peli.trailer}">Ver tráiler</button> 
                   </div>
                 </div>
               </div>`;
           });
 
           $('#spinner').hide();
+          //$("#lista-peliculas").html(html);---Antigua version, no animada
           $("#lista-peliculas").html(html);
+          // Animar cada tarjeta con delay
+          $("#lista-peliculas .card").each(function (i) {
+          $(this).hide().delay(i * 150).fadeIn(600);
+          });
         }
 
         //Llenar el formulario de renta si existe #peliculas
@@ -102,4 +115,21 @@ $(document).ready(function () {
     const modal = new bootstrap.Modal(document.getElementById('modalResumen'));
     modal.show();
   });
+
+  //Manejo del boton "Ver trailer"
+  $(document).on("click", ".ver-trailer", function (){
+    const trailerURL = $(this).data("trailer");
+
+  // Como ya están embebidos, no necesitas convertir el enlace
+  $("#trailerFrame").attr("src", trailerURL);
+
+  const modal = new bootstrap.Modal(document.getElementById("modalTrailer"));
+  modal.show();
+});
+
+// Limpiar el iframe al cerrar el modal
+$('#modalTrailer').on('hidden.bs.modal', function () {
+  $("#trailerFrame").attr("src", "");
+  });
+  
 });

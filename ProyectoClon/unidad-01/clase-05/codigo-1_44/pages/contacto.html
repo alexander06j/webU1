@@ -5,30 +5,56 @@
   <title>Contacto - CinePlus</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">CinePlus</a>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="renta.html">Rentar Películas</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
   <div class="container py-5">
     <h2 class="mb-4">Contáctanos</h2>
     <form id="form-contacto" novalidate>
       <div class="mb-3">
         <label for="nombre" class="form-label">Nombre</label>
         <input type="text" class="form-control" id="nombre" required>
+        <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
       </div>
+
       <div class="mb-3">
         <label for="correo" class="form-label">Correo electrónico</label>
         <input type="email" class="form-control" id="correo" required>
+        <div class="invalid-feedback">Ingresa un correo válido.</div>
       </div>
+
       <div class="mb-3">
         <label for="mensaje" class="form-label">Mensaje</label>
         <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+        <div class="invalid-feedback">El mensaje debe tener entre 20 y 50 caracteres.</div>
       </div>
+
       <button type="submit" class="btn btn-primary">Enviar</button>
       <div id="alerta" class="alert alert-success mt-3 d-none">Mensaje enviado con éxito.</div>
     </form>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script>
+  <!-- <script>
     $('#form-contacto').on('submit', function (e) {
       e.preventDefault();
       if (this.checkValidity()) {
@@ -37,6 +63,54 @@
         this.reset();
       }
     });
-  </script>
+  </script> -->
+
+  <script>
+  $('#form-contacto').on('submit', function (e) {
+    e.preventDefault();
+
+    let valido = true;
+
+    // Validar nombre
+    const nombre = $('#nombre');
+    if (nombre.val().trim() === "") {
+      nombre.addClass('is-invalid');
+      valido = false;
+    } else {
+      nombre.removeClass('is-invalid');
+    }
+
+    // Validar correo
+    const correo = $('#correo');
+    const correoValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!correoValido.test(correo.val().trim())) {
+      correo.addClass('is-invalid');
+      valido = false;
+    } else {
+      correo.removeClass('is-invalid');
+    }
+
+    // Validar mensaje
+    const mensaje = $('#mensaje');
+    const longitud = mensaje.val().trim().length;
+    if (longitud < 20 || longitud > 50) {
+      mensaje.addClass('is-invalid');
+      valido = false;
+    } else {
+      mensaje.removeClass('is-invalid');
+    }
+
+    // Si todo está válido, mostrar alerta y resetear
+    if (valido) {
+      $('#alerta').removeClass('d-none').hide().fadeIn();
+      setTimeout(() => $('#alerta').fadeOut(), 3000);
+      this.reset();
+      $('.form-control').removeClass('is-invalid');
+    }
+  });
+</script>
+
+
+
 </body>
 </html>

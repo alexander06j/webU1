@@ -10,4 +10,57 @@ body {
   #spinner{
     display : none;
   }
-  
+ 
+  body {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.btn-primary {
+  background-color: #0056b3;
+  border-color: #004a99;
+}
+
+.navbar {
+  background-color: #343a40;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.container {
+  color: black;
+}

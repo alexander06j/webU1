@@ -120,5 +120,40 @@ dentro entre 3 y 5 reseñas por cada película, identificadas por su id.
 ### detalle.js 
 Este archivo contiene el código JavaScript que gestiona dinámicamente la sección de reseñas en detalle.html. Utiliza AJAX para cargar el contenido desde resenias.json, filtra las reseñas según el id de la película obtenido desde la URL, y las muestra en tarjetas con calificación visual en forma de estrellas. También incluye una función modular para generar las estrellas según la puntuación (1 a 5)
 
+## Boton "Ver tráiler"
+Se añadió un botón “Ver tráiler” en cada tarjeta de película en index.html, que al hacer clic abre un modal de Bootstrap con el tráiler embebido desde YouTube. La funcionalidad se implementó en app.js, utilizando atributos data-trailer y eventos dinámicos para cargar el video en un < iframe > dentro del modal.
+
+## Alerta de Bienvenida
+- Ahora, se implementó un mensaje de alerta de bienvenida.
+1. El cotenedor de la alerta fué agregado en el index.html, dentro del body
+2. En app.js se añadió la siguiente lógica:
+
+if (!localStorage.getItem("bienvenidaMostrada")) {
+  $("#alerta-bienvenida").removeClass("d-none");
+  localStorage.setItem("bienvenidaMostrada", "true");
+}
+
+### Cómo funciona?
+La primera vez que el usuario entra, localStorage no tiene la clave,"bienvenidaMostrada", así que se muestra la alerta.
+Al mostrarse, se guarda "bienvenidaMostrada": "true" en el navegador.
+En visitas futuras, la alerta no se vuelve a mostrar.
+
+
+## Animación
+Se aplicó una animación visual al mostrar las tarjetas de películas en index.html, utilizando jQuery para que cada tarjeta aparezca progresivamente con fadeIn. Esto mejora la experiencia del usuario al cargar la galería, y se repite automáticamente cada vez que se recarga la página.
+
+## Validar campos del formulario
+Se implementó validación personalizada en el formulario de contacto ubicado en contacto.html.
+
+- Se verificó que todos los campos estén completos y correctamente escritos, incluyendo una restricción para que el mensaje tenga entre 20 y 50 caracteres.
+
+- Se mostraron mensajes de error específicos debajo de cada campo usando clases de Bootstrap (invalid-feedback) y estilos visuales (is-invalid) para mejorar la experiencia del usuario.
+
+## Tema Visual Personalizado
+ Para finalizar el proyecto, vamos a aplicar algunos cambios en el apartado visual de la página.
+- Se aplicó un diseño visual coherente y atractivo en toda la aplicación.
+
+- Se integró una nueva tipografía desde Google Fonts, se personalizaron colores y espaciados en style.css para mejorar la estética general, y se ajustó la estructura para que el footer permanezca fijo en la parte inferior del navegador.
+ - Además, se incluyó una barra de navegación en todas las páginas, destacando visualmente la sección activa mediante la clase active.
 ## URL 
 https://github.com/alexander06j/webU1.git
